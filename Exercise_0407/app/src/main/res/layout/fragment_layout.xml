@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="30dp"
+                  android:orientation="horizontal"
+    >
+
+        <ImageView android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_weight="1"
+                   android:src="@mipmap/uj"
+        />
+        <ImageView android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_weight="1"
+                   android:src="@mipmap/uk"
+        />
+        <ImageView android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_weight="1"
+                   android:src="@mipmap/un"
+        />
+    </LinearLayout>
+    <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:button="@null"
+              android:layout_marginTop="25dp"
+              android:drawableRight="@mipmap/vs"
+              android:drawablePadding="5dp"
+              android:text="更多登录方式"
+              android:layout_marginLeft="35dp"
+              android:layout_marginBottom="30dp"
+    />
+
+    <ListView android:id="@+id/listView" android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+
+    ></ListView>
+    <RadioGroup android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+    >
+        <RadioButton android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:button="@null"
+                     android:drawablePadding="10dp"
+                     android:drawableTop="@mipmap/a28"
+                     android:gravity="center"
+                     android:text="离线下载"/>
+        <RadioButton android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:button="@null"
+                     android:drawablePadding="10dp"
+                     android:drawableTop="@mipmap/a96"
+                     android:gravity="center"
+                     android:text="夜间模式"/>
+        <RadioButton android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:button="@null"
+                     android:drawablePadding="10dp"
+                     android:drawableTop="@mipmap/adt"
+                     android:gravity="center"
+                     android:text="设置"/>
+    </RadioGroup>
+
+</LinearLayout>
